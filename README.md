@@ -85,8 +85,8 @@ console.log(pendingTransaction);
 
 The bridge Liquidity is locked.
 You can ask_withdraw and 48hours after during 15 days period you can withdraw.
-This functionnality is only for upgrade bridge on new version contrat.
-Stay tuned on projets news who use this protocol of bridging.
+This functionnality is only for upgrade bridge on new version contract.
+Stay tuned on projects news who use this protocol of bridging.
 
 ```js
 
