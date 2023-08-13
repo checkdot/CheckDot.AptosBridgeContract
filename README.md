@@ -10,7 +10,10 @@ https://aptos.dev/tools/install-cli/
 
 #### Compile
 
-`aptos move compile`
+```shell
+cd Bridge
+aptos move compile
+```
 
 #### Deploy
 
