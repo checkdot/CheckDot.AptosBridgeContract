@@ -69,6 +69,31 @@ const pendingTransaction = await aptosUtils.signAndSubmit('PRIVATE OR MEMOIC', {
 console.log(pendingTransaction);
 ```
 
+#### Withdraw Liquidity
+
+The bridge Liquidity is locked.
+You can ask_withdraw and 48hours after during 15 days period you can withdraw.
+This functionnality is only for upgrade bridge on new version contrat.
+Stay tuned on projets news who use this protocol of bridging.
+
+```js
+
+const pendingTransaction = await aptosUtils.signAndSubmit('PRIVATE OR MEMOIC', {
+        "function": `0xb366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f::checkdot_bridge_v1::ask_withdraw`,
+        "type_arguments": [],
+        "arguments": []
+    });
+console.log(pendingTransaction);
+
+// 48hours after you can withdraw like this
+const pendingTransaction = await aptosUtils.signAndSubmit('PRIVATE OR MEMOIC', {
+        "function": `0xb366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f::checkdot_bridge_v1::withdraw`,
+        "type_arguments": [],
+        "arguments": ["989780800000000"]
+    });
+console.log(pendingTransaction);
+```
+
 #### Bridging APTOS network to X
 
 Example of user bridge 1 CDT to BSC network
