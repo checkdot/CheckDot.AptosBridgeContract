@@ -15,6 +15,7 @@ https://aptos.dev/tools/install-cli/
 #### Deploy
 
 ```shell
+cd Bridge
 aptos move publish
 aptos move run --function-id b366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f::CdtCoin::initialize
 ```
