@@ -1,0 +1,8 @@
+[package]
+name = "bridge"
+version = "0.0.1"
+
+[dependencies]
+
+[addresses]
+bridge = "0xf22bede237a07e121b56d91a491eb7bcdfd1f5907926a9e58338f964a01b17fa"
