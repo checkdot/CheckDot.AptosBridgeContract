@@ -20,7 +20,19 @@ aptos move compile
 ```shell
 cd Bridge
 aptos move publish
-aptos move run --function-id b366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f::CdtCoin::initialize
+```
+
+```js
+const pendingTransaction = await aptosUtils.signAndSubmit('PRIVATE OR MEMOIC', {
+        "function": `0xb366c7c4521277846a7fee4f3bcc92c435089537d30390d8854ca31addfbae4f::checkdot_bridge_v1::initialize`,
+        "type_arguments": [],
+        "arguments": [
+            "APT", // Chain Name
+            "1000000000", // USDC number of dollars for calculating bridge fee in APT
+            "0" // percentage of CDT fees on each bridging
+        ]
+    });
+console.log(pendingTransaction);
 ```
 
 #### Important information
